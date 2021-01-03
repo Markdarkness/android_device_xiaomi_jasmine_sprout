@@ -82,6 +82,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.dcvs.extra-buff-count=2 \
     persist.vendor.delta_time.enable=true
 
+# System property for cabl
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qualcomm.cabl=0 \
+    ro.vendor.display.cabl=0 \
+    ro.vendor.display.ad=1 \
+    ro.vendor.display.ad.sdr_calib_data=/data/vendor/display/ad_calib.cfg \
+    ro.vendor.display.sensortype=2
+
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds
