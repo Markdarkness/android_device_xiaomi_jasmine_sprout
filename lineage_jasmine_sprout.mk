@@ -40,14 +40,6 @@ TARGET_SCREEN_DENSITY := 400
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Gapps Sector
-SAKURA_BUILD_TYPE := gapps
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-
-# OP Launcher
-SAKURA_OPLAUNCHER := true
-
 # Maintainer Sector
 SAKURA_MAINTAINER := Markdarkness🐺
 
