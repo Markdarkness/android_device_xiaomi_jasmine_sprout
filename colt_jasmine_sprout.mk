@@ -24,8 +24,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit Carbon product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit ColtOS product configuration
+$(call inherit-product, vendor/colt/config/common.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -37,15 +37,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Density
 TARGET_SCREEN_DENSITY := 400
 
-# Boot Animation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Maintainer Sector
-SAKURA_MAINTAINER := Markdarkness🐺
+# ColtOS Stuff
+TARGET_BOOT_ANIMATION_RES := 1080x2160
+COLT_BUILD_TYPE := Official
+COLT_DEVICE_MAINTAINER := Markdarkness🐺
 
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_jasmine_sprout
+PRODUCT_NAME := colt_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
